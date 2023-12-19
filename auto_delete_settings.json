@@ -4,20 +4,18 @@
     "directories": [
         {
             "path": "",
+            "time_limit_for_modified_time": 0,
+            "time_limit_for_first_seen": 0,
+            "action_by_last_modified": true,
+            "action_by_first_seen": true,
             "delete_entire_folders": true,
-            "delete_by_last_modified": true,
-            "delete_by_first_seen": true,
-            "saved_deleted_files_info_to_text": true,
-            "saved_error_message_directory_to_text": true,
             "file_name_exceptions": [
 
             ],
             "directory_name_exceptions": [
 
             ],
-            "time_limit_for_modified_time": 604800,
-            "time_limit_for_first_seen": 604800
+            "save_logs": true
         }
     ]
 }
-
