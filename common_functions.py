@@ -107,8 +107,9 @@ def checking_the_condition_for_action(current_time, path_settings, file_name_exc
                 is_first_seen_condition = file_info['file_first_seen_time'] < time_limit_for_first_seen
 
                 if not is_file_exception:
-                    if action_by_last_modified and action_by_first_seen and is_modified_time_condition and is_first_seen_condition:
-                        new_files_info[file_path] = True
+                    if action_by_last_modified and action_by_first_seen:
+                        if is_modified_time_condition and is_first_seen_condition:
+                            new_files_info[file_path] = True
                     elif action_by_last_modified and is_modified_time_condition:
                         new_files_info[file_path] = True
                     elif action_by_first_seen and is_first_seen_condition:
